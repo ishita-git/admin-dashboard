@@ -1,0 +1,87 @@
+.single {
+    display: flex;
+    width: 100%;
+
+    .single-container {
+        flex: 6;
+
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .left {
+                position: relative;
+                flex: 1;
+                box-shadow: 2px 4px 10px 1px rgba(128, 128, 128, 0.153);
+                padding: 20px;
+
+                
+
+                .edit-btn{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    padding: 5px;
+                    font-size: 12px;
+                    color: darkblue;
+                    background-color: rgba(0, 0, 139, 0.06);
+                    cursor: pointer;
+                    border-radius: 0 0 0 5px;
+                }
+
+                .item{
+                    display: flex;
+                    gap: 20px;
+
+                    .item-img{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .details{
+
+                        .item-title{
+                            margin-bottom: 10px;
+                            color: #555;
+
+                        }
+
+                        .item-details{
+                            margin-bottom: 10px;
+                            font-size: 14px;
+
+                            .item-key{
+                                font-weight: bold;
+                                color: gray;
+                                margin-right: 5px;
+                            }
+                            .item-value{
+                                font-weight: 300;
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .right {
+                flex: 2;
+            }
+        }
+
+        .bottom{
+            box-shadow: 2px 4px 10px 1px rgba(128, 128, 128, 0.153);
+            padding: 20px;
+
+        }
+        .title{
+            font-size: 20px;
+            color: lightgray;
+            margin-bottom: 20px;
+            margin: 10px 20px;
+        }
+    }
+}
